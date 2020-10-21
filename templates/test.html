@@ -5,11 +5,14 @@
         <!--The style can be define in the head
         once for all the same elements on web page.
         the syntax is: name_web_element {properties} -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../static/stylesheets/style.css">
         <style>
             body {
                 color: red;
                 text-align: center;
+            }
+            table td{
+                color: brown;
             }
         </style>
     </head>
@@ -24,5 +27,28 @@
         <h1>My title 1</h1>
         <h1>My title 2</h1>
         Bla Bla
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Motor</th>
+                    <th>Speed</th>
+                    <th>Weight</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Yamaha ybr125</td>
+                    <td>110km/h</td>
+                    <td>140kg</td>
+                </tr>
+                <tr>
+                    <td>Suzuki GSF600</td>
+                    <td>160km/h</td>
+                    <td>200kg</td>
+                </tr>
+            </tbody>
+        </table>
+
     </body>
 </html>
