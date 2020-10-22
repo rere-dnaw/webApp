@@ -11,8 +11,23 @@
                 color: red;
                 text-align: center;
             }
-            table td{
-                color: brown;
+            @media(min-width: 600px){
+                body {
+                    background-color: darkgray;
+                }
+            }
+            @media(min-width: 599px){
+                body{
+                    background-color: darksalmon;
+                }
+            }
+            #container {
+                font-size: 100px;
+                display: flexbox;
+                flex-wrap: wrap;
+                border: dimgray;
+                border-collapse: collapse;
+                border-width: 2px;
             }
         </style>
     </head>
@@ -28,6 +43,29 @@
         <h1>My title 2</h1>
         Bla Bla
 
+        <ul>
+            <li><a href="https://www.google.com">Google</a></li>
+        </ul>
+        <div id="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>10</th>
+                        <th>11</th>
+                        <th>12</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
         <table>
             <thead>
                 <tr>

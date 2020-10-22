@@ -2,3 +2,14 @@ h1 {
     color: rgb(226, 248, 31);
     text-align: right;
 }
+table td{
+    color: brown;
+}
+/* this is how a styling can be applied to the events/actions for element */
+table:hover{
+    background-color: cornflowerblue;
+}
+/* this is how styling can be applied for attribute */
+a[href="https://www.google.com"]{
+    color: chartreuse;
+}
