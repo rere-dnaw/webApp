@@ -22,13 +22,29 @@
                 }
             }
             #container {
-                font-size: 100px;
-                display: flexbox;
+                font-size: 50px;
+                display: flex;
                 flex-wrap: wrap;
-                border: dimgray;
-                border-collapse: collapse;
-                border-width: 2px;
             }
+            #container > div {
+                background-color: darkolivegreen;
+                margin: 20px;
+                padding: 20px;
+                width: 100px;
+            }
+            #grid {
+                background-color: lightgreen;
+                display: grid;
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                grid-template-columns: 150px 150px auto;
+            }
+
+            .grid-class {
+                background-color: mediumslateblue;
+                text-align: center;
+            }
+
         </style>
     </head>
     <!-- The stale can be also define in for the whole section-->
@@ -47,25 +63,35 @@
             <li><a href="https://www.google.com">Google</a></li>
         </ul>
         <div id="container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                        <th>6</th>
-                        <th>7</th>
-                        <th>8</th>
-                        <th>9</th>
-                        <th>10</th>
-                        <th>11</th>
-                        <th>12</th>
-                    </tr>
-                </thead>
-            </table>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
         </div>
+
+        <div id="grid">
+            <div class="grid-class">A</div>
+            <div class="grid-class">B</div>
+            <div class="grid-class">C</div>
+            <div class="grid-class">D</div>
+            <div class="grid-class">E</div>
+            <div class="grid-class">F</div>
+            <div class="grid-class">G</div>
+            <div class="grid-class">H</div>
+            <div class="grid-class">I</div>
+            <div class="grid-class">J</div>
+        </div>
+
         <table>
             <thead>
                 <tr>
